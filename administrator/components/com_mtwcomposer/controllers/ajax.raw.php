@@ -42,7 +42,7 @@ class mtwComposerControllerAjax extends JControllerLegacy
 	protected $composer_data = array(
 		'url' => 'https://getcomposer.org/composer.phar',
 		'dir' => JPATH_ROOT,
-		'bin' => JPATH_ROOT.'/media/com_mtwcomposer/composer.phar',
+		'bin' => JPATH_ROOT.'/media/com_mtwcomposer/phar/composer.phar',
 		'json' => JPATH_ROOT.'/composer.json',
 		'conf' => array(
 			"minimum-stability" => "dev"

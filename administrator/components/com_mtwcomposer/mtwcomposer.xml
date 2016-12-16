@@ -14,11 +14,12 @@
 		<language tag="en-GB">language/en-GB.com_mtwcomposer.ini</language>
 	</languages>
 	<media destination="com_mtwcomposer" folder="media">
-		<filename>composer.phar</filename>
 		<folder>css</folder>
 		<folder>js</folder>
+		<folder>phar</folder>
 	</media>
 	<administration>
+		<menu img="class:joomlaupdate">COM_MTWCOMPOSER_OVERVIEW</menu>
 		<files folder="admin">
 			<filename>access.xml</filename>
 			<filename>config.xml</filename>
@@ -29,8 +30,8 @@
 			<folder>views</folder>
 		</files>
 		<languages folder="admin">
-			<language tag="en-GB">language/en-GB.com_mtwcomposer.ini</language>
-			<language tag="en-GB">language/en-GB.com_mtwcomposer.sys.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_mtwcomposer.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_mtwcomposer.sys.ini</language>
 		</languages>
 	</administration>
 </extension>
