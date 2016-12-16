@@ -24,10 +24,10 @@ use ComposerConsoleConsole\Helper;
 use ComposerConsole\Controller\Phar;
 
 /**
- * Ajaxgettask Webservice Controller
+ * mtwComposer Ajax Controller
  *
- * @package     Joomla!
- * @subpackage  Composer
+ * @package     Matware
+ * @subpackage  mtwComposer
  * @since       1.0
  */
 class mtwComposerControllerAjax extends JControllerLegacy

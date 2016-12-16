@@ -10,10 +10,7 @@
 	<version>1.0.0</version>
 	<description>Manage composer via Joomla! web administrator</description>
 
-	<languages folder="site">
-		<language tag="en-GB">language/en-GB.com_mtwcomposer.ini</language>
-	</languages>
-	<media destination="com_mtwcomposer" folder="media">
+	<media destination="com_mtwcomposer" folder="media/com_mtwcomposer">
 		<folder>css</folder>
 		<folder>js</folder>
 		<folder>phar</folder>
@@ -23,6 +20,7 @@
 		<files folder="admin">
 			<filename>access.xml</filename>
 			<filename>config.xml</filename>
+			<filename>controller.php</filename>
 			<filename>mtwcomposer.php</filename>
 			<filename>mtwcomposer.xml</filename>
 			<folder>controllers</folder>
