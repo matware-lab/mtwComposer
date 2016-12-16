@@ -1,0 +1,20 @@
+{
+    "name": "matware/mtwcomposer",
+    "type": "joomla-package",
+    "description": "Manage composer via Joomla! web administrator",
+    "keywords": ["joomla", "framework", "composer",  "php", "matware"],
+    "homepage": "https://github.com/fastslack/mtwcomposer",
+    "license": "GPL-2.0+",
+		"require": {
+         "php": ">=5.3.10",
+         "joomla/http": "2.*@dev",
+         "psr/log": "~1.0"
+     },
+     "require-dev": {
+     },
+     "autoload": {
+         "psr-4": {
+             "mtwComposer\\": "src/"
+         }
+		 }
+}
