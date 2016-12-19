@@ -45,6 +45,19 @@ class mtwComposerViewConsole extends JViewLegacy
 			JToolbarHelper::preferences('com_mtwcomposer');
 		}
 
+		$this->composerFile = false;
+		$this->htaccess = false;
+
+		if (file_exists(JPATH_ROOT.'/composer.json'))
+		{
+			$this->composerFile = true;
+		}
+
+		if (file_exists(JPATH_ROOT.'/.htaccess'))
+		{
+			$this->htaccess = true;
+		}
+
 		JToolbarHelper::divider();
 		JToolbarHelper::help('JHELP_COMPONENTS_JOOMLA_UPDATE');
 

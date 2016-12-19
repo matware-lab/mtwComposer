@@ -25,14 +25,34 @@ $userId	= $user->get('id');
 		<div class="row">
 				<div class="col-md-1"></div>
 				<div class="col-md-10">
-					<!--<div class="meter red">
-						<span style="width: 100%"></span>
-					</div>-->
+<?php
+	if ($this->composerFile == false) {
+?>
+
+					<div class="alert alert-danger">
+					  <?php echo JText::_('COM_MTWCOMPOSER_ERROR_COMPOSER'); ?>
+					</div>
+<?php
+	}
+
+	if ($this->htaccess == false) {
+?>
+					<div class="alert alert-danger">
+						<?php echo JText::_('COM_MTWCOMPOSER_ERROR_HTACCESS'); ?>
+					</div>
+<?php
+	}
+
+	if (($this->htaccess == true) && ($this->composerFile == true)) {
+?>
 					<div id="progress" class="progress progress-info progress-striped">
 			        <div id="progresstext" class="bar" style="width: 100%;"><?php echo JText::_('COM_MTWCOMPOSER_WAITING'); ?></div>
 			    </div>
 					<div id="mtwcomposerdiv" class="terminal">
 					</div>
+<?php
+	}
+?>
 				</div>
 				<div class="col-md-1"></div>
 		</div>

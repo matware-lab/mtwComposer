@@ -150,7 +150,7 @@ class mtwComposerControllerAjax extends JControllerLegacy
 		$input = new \Symfony\Component\Console\Input\ArrayInput($array);
 
 		// Set interactive to false
-		//$input->setInteractive(false);
+		$input->setInteractive(false);
 
 		// Run application
 		$return = $app->run($input,$output);
