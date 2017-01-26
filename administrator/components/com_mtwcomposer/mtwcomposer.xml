@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="3.1" method="upgrade">
-	<name>com_mtwcomposer</name>
+	<name>mtwComposer</name>
 	<author>Matias Aguirre</author>
 	<authorEmail>maguirre@matware.com.ar</authorEmail>
 	<authorUrl>http://www.matware.com.ar</authorUrl>
